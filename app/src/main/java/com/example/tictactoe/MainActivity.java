@@ -6,7 +6,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button buttons[][] = new Button[3][3];
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
