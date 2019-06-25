@@ -108,5 +108,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
+    private void player2Wins() {
+        player2Points++;
+        Toast.makeText(this,"Player 2 Wins", Toast.LENGTH_LONG).show();
+        updatePlayerPoints();
+        resetBoard();
+    }
+
+    private void player1Wins() {
+        player1Points++;
+        Toast.makeText(this,"Player 1 Wins", Toast.LENGTH_LONG).show();
+        updatePlayerPoints();
+        resetBoard();
+    }
+
+    private void draw(){
+        Toast.makeText(this,"Draw!", Toast.LENGTH_LONG).show();
+        resetBoard();
+    }
+
+    private void updatePlayerPoints() {
+        player2TextView.setText("Player 2: " + player2Points);
+        player1TextView.setText("Player 1: " + player1Points);
+    }
+
 
 }
